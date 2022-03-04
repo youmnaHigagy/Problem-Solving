@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Problem.Solving.Problems.Easy;
+using System;
 
 namespace Problem.Solving
 {
@@ -6,7 +7,9 @@ namespace Problem.Solving
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Console.WriteLine("Hello Problems!");
+            NumberLineJumps.Execute();
         }
     }
 }
