@@ -13,21 +13,21 @@ namespace Problem.Solving.Problems.Easy
         {
             try
             {
-                Console.Write("This is the Number Line Jumps, Enter the required data... \n");
-                Console.Write("Enter the first Kangaroo initial position:");
+                Console.WriteLine("This is the Number Line Jumps, Enter the required data... ");
+                Console.Write("Enter the first Kangaroo initial position: ");
                 int x1 = int.Parse(Console.ReadLine());
-                Console.Write("Enter the first Kangaroo velocity:");
+                Console.Write("Enter the first Kangaroo velocity: ");
                 int v1 = int.Parse(Console.ReadLine());
-                Console.Write("Enter the second Kangaroo initial position:");
+                Console.Write("Enter the second Kangaroo initial position: ");
                 int x2 = int.Parse(Console.ReadLine());
-                Console.Write("Enter the second Kangaroo velocity:");
+                Console.Write("Enter the second Kangaroo velocity: ");
                 int v2 = int.Parse(Console.ReadLine());
-                Console.Write($"Will Meet?\n");
+                Console.Write($"Will they meet? well,... ");
                 Console.WriteLine(kangaroo(x1, v1, x2, v2));
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Obvoisly wrong input!");
+                Console.WriteLine("\n\nObvoisly wrong input!");
             }
 
         }
