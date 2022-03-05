@@ -11,25 +11,17 @@ namespace Problem.Solving.Problems.Easy
 
         public static void Execute()
         {
-            try
-            {
-                Console.WriteLine("This is the Number Line Jumps, Enter the required data... ");
-                Console.Write("Enter the first Kangaroo initial position: ");
-                int x1 = int.Parse(Console.ReadLine());
-                Console.Write("Enter the first Kangaroo velocity: ");
-                int v1 = int.Parse(Console.ReadLine());
-                Console.Write("Enter the second Kangaroo initial position: ");
-                int x2 = int.Parse(Console.ReadLine());
-                Console.Write("Enter the second Kangaroo velocity: ");
-                int v2 = int.Parse(Console.ReadLine());
-                Console.Write($"Will they meet? well,... ");
-                Console.WriteLine(kangaroo(x1, v1, x2, v2));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("\n\nObvoisly wrong input!");
-            }
-
+            Console.WriteLine("This is the Number Line Jumps, Enter the required data... ");
+            Console.Write("Enter the first Kangaroo initial position: ");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the first Kangaroo velocity: ");
+            int v1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second Kangaroo initial position: ");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second Kangaroo velocity: ");
+            int v2 = int.Parse(Console.ReadLine());
+            Console.Write($"Will they meet? well,... ");
+            Console.WriteLine(kangaroo(x1, v1, x2, v2));
         }
 
         public static string kangaroo(int x1, int v1, int x2, int v2)
