@@ -14,6 +14,7 @@ namespace Problem.Solving
                 Console.WriteLine("Hello Problems!");
                 Console.WriteLine("For Number Line Jumps choose 1");
                 Console.WriteLine("For Between Two Sets choose 2");
+                Console.WriteLine("For Breaking The Records choose 3");
 
                 while (!terminate)
                 {
@@ -26,6 +27,9 @@ namespace Problem.Solving
                             break;
                         case "2":
                             BetweenTwoSets.Execute();
+                            break;
+                        case "3":
+                            BreakingTheRecords.Execute();
                             break;
                     }
 
