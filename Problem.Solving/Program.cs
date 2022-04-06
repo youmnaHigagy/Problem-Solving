@@ -31,6 +31,9 @@ namespace Problem.Solving
                         case "3":
                             BreakingTheRecords.Execute();
                             break;
+                        case "4":
+                            DivisibleSumPairs.Execute();
+                            break;
                     }
 
                     Console.Write("To terminate choose 0, or press any key to repeat: ");
