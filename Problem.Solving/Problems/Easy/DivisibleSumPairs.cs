@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Problem.Solving.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Problem.Solving.Problems.Easy
+namespace Problem.Solving.Problems
 {
-    public static class DivisibleSumPairs
+    public class DivisibleSumPairs : IProblemExecution
     {
-        public static void Execute()
+        public void Execute()
         {
             Console.WriteLine("This is the Divisible Sum Pairs, Enter the required data... ");
             Console.Write("Enter the divisible by number: ");
@@ -18,7 +17,7 @@ namespace Problem.Solving.Problems.Easy
             Console.WriteLine($"So, there are {divisibleSumPairs(k, arr)} possible pairs.");
         }
 
-        public static int divisibleSumPairs(int k, List<int> arr)
+        public int divisibleSumPairs(int k, List<int> arr)
         {
             /*
              * So we have an array and we want to check how many pairs the sum of which 

@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Problem.Solving.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Problem.Solving.Problems.Easy
+namespace Problem.Solving.Problems
 {
-    public static class BetweenTwoSets
+    public class BetweenTwoSets : IProblemExecution
     {
-        public static void Execute()
+        public void Execute()
         {
             Console.WriteLine("This is the Between Two Sets, Enter the required data... ");
             Console.Write("Enter the first Array elements separated by comma: ");
@@ -18,7 +17,7 @@ namespace Problem.Solving.Problems.Easy
             Console.WriteLine($"So, there are {getTotalX(a, b)} possible numbers.");
         }
 
-        public static int getTotalX(List<int> a, List<int> b)
+        public int getTotalX(List<int> a, List<int> b)
         {
             /*
              * So we have two arrays and we need to know the count of 

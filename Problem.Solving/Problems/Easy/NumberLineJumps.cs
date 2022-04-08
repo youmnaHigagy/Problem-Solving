@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Problem.Solving.Interfaces;
+using System;
 
-namespace Problem.Solving.Problems.Easy
+namespace Problem.Solving.Problems
 {
-    public static class NumberLineJumps
+    public class NumberLineJumps : IProblemExecution
     {
 
-        public static void Execute()
+        public void Execute()
         {
             Console.WriteLine("This is the Number Line Jumps, Enter the required data... ");
             Console.Write("Enter the first Kangaroo initial position: ");
@@ -24,7 +21,7 @@ namespace Problem.Solving.Problems.Easy
             Console.WriteLine(kangaroo(x1, v1, x2, v2));
         }
 
-        public static string kangaroo(int x1, int v1, int x2, int v2)
+        public string kangaroo(int x1, int v1, int x2, int v2)
         {
             /* Check if they are at the same point every jump
              * That means check if x1+v1*jumps =x2+v2*jumps

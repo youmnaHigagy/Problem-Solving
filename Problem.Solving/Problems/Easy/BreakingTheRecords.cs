@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Problem.Solving.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Problem.Solving.Problems.Easy
+namespace Problem.Solving.Problems
 {
-    public static class BreakingTheRecords
+    public class BreakingTheRecords: IProblemExecution
     {
-        public static void Execute()
+        public void Execute()
         {
             Console.WriteLine("This is the Breaking The Records, Enter the required data... ");
             Console.Write("Enter the Scores elements separated by comma: ");
@@ -17,7 +16,7 @@ namespace Problem.Solving.Problems.Easy
             Console.WriteLine($"So, Maximum Record was broken {breaks[0]} times. Minimum Record was broken {breaks[1]} times.");
         }
 
-        public static int[] breakingRecords(List<int> scores)
+        public int[] breakingRecords(List<int> scores)
         {
             /* 
              * Simply we have a player list of games scores

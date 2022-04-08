@@ -1,5 +1,8 @@
-﻿using Problem.Solving.Problems.Easy;
+﻿using Problem.Solving.Data.Repositories;
+using Problem.Solving.Interfaces;
+using Problem.Solving.Problems;
 using System;
+using System.Linq;
 
 namespace Problem.Solving
 {
@@ -10,31 +13,15 @@ namespace Problem.Solving
             try
             {
                 var terminate = false;
+                var problems = new ProblemsRepository().GetProblems();
 
-                Console.WriteLine("Hello Problems!");
-                Console.WriteLine("For Number Line Jumps choose 1");
-                Console.WriteLine("For Between Two Sets choose 2");
-                Console.WriteLine("For Breaking The Records choose 3");
+                ListExistingProblemsOnScreen(problems);
 
                 while (!terminate)
                 {
                     Console.Write("\n\nChoose a problem to be Executed: ");
-                    var game = Console.ReadLine();
-                    switch (game)
-                    {
-                        case "1":
-                            NumberLineJumps.Execute();
-                            break;
-                        case "2":
-                            BetweenTwoSets.Execute();
-                            break;
-                        case "3":
-                            BreakingTheRecords.Execute();
-                            break;
-                        case "4":
-                            DivisibleSumPairs.Execute();
-                            break;
-                    }
+
+                    SelectAndExecuteProblem(problems);
 
                     Console.Write("To terminate choose 0, or press any key to repeat: ");
                     terminate = Console.ReadLine() == "0";
@@ -45,6 +32,25 @@ namespace Problem.Solving
                 Console.WriteLine("\n\nObvoisly wrong input!");
             }
 
+        }
+
+        private static void ListExistingProblemsOnScreen(Entities.Problem[] problems)
+        {
+            Console.WriteLine("Hello Problems!");
+            foreach (var problem in problems)
+            {
+                Console.WriteLine($"For {problem.Title} choose {problem.Id}");
+            }
+        }
+
+        private static void SelectAndExecuteProblem(Entities.Problem[] problems)
+        {
+            var selectedProblemId = int.Parse(Console.ReadLine());
+            var selectedProblemAlias = problems.FirstOrDefault(x => x.Id == selectedProblemId).Alias;
+            var typeName = $"Problem.Solving.Problems.{selectedProblemAlias}";
+            var objectType = Type.GetType(typeName);
+            var selectedProblem = Activator.CreateInstance(objectType) as IProblemExecution;
+            selectedProblem.Execute();
         }
     }
 }
