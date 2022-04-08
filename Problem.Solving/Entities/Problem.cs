@@ -1,4 +1,4 @@
-﻿namespace Problem.Solving.Entities
+﻿namespace ProblemSolving.Entities
 {
     public class Problem
     {

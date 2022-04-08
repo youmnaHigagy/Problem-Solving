@@ -1,9 +1,9 @@
-﻿using Problem.Solving.Interfaces;
+﻿using ProblemSolving.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Problem.Solving.Problems
+namespace ProblemSolving.Problems
 {
     public class DivisibleSumPairs : IProblemExecution
     {

@@ -1,10 +1,11 @@
-﻿using Problem.Solving.Data.Repositories;
-using Problem.Solving.Interfaces;
-using Problem.Solving.Problems;
+﻿using ProblemSolving.Repositories;
+using ProblemSolving.Entities;
+using ProblemSolving.Interfaces;
+using ProblemSolving.Problems;
 using System;
 using System.Linq;
 
-namespace Problem.Solving
+namespace ProblemSolving
 {
     class Program
     {
@@ -34,7 +35,7 @@ namespace Problem.Solving
 
         }
 
-        private static void ListExistingProblemsOnScreen(Entities.Problem[] problems)
+        private static void ListExistingProblemsOnScreen(Problem[] problems)
         {
             Console.WriteLine("Hello Problems!");
             foreach (var problem in problems)
@@ -43,11 +44,11 @@ namespace Problem.Solving
             }
         }
 
-        private static void SelectAndExecuteProblem(Entities.Problem[] problems)
+        private static void SelectAndExecuteProblem(Problem[] problems)
         {
             var selectedProblemId = int.Parse(Console.ReadLine());
             var selectedProblemAlias = problems.FirstOrDefault(x => x.Id == selectedProblemId).Alias;
-            var typeName = $"Problem.Solving.Problems.{selectedProblemAlias}";
+            var typeName = $"ProblemSolving.Problems.{selectedProblemAlias}";
             var objectType = Type.GetType(typeName);
             var selectedProblem = Activator.CreateInstance(objectType) as IProblemExecution;
             selectedProblem.Execute();

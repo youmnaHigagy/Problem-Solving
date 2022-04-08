@@ -1,7 +1,7 @@
-﻿using Problem.Solving.Interfaces;
+﻿using ProblemSolving.Interfaces;
 using System;
 
-namespace Problem.Solving.Problems
+namespace ProblemSolving.Problems
 {
     public class NumberLineJumps : IProblemExecution
     {

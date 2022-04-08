@@ -1,4 +1,4 @@
-﻿namespace Problem.Solving.Interfaces
+﻿namespace ProblemSolving.Interfaces
 {
     public interface IProblemExecution
     {
