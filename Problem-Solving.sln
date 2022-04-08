@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemSolving.Console", "Problem.Solving\ProblemSolving.Console.csproj", "{EFAA1F55-57D9-42C8-B21A-A5477573294F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemSolving", "ProblemSolving\ProblemSolving.csproj", "{359DB1D0-FFE2-43A8-8BE5-C7CEF2894249}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EFAA1F55-57D9-42C8-B21A-A5477573294F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFAA1F55-57D9-42C8-B21A-A5477573294F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFAA1F55-57D9-42C8-B21A-A5477573294F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFAA1F55-57D9-42C8-B21A-A5477573294F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359DB1D0-FFE2-43A8-8BE5-C7CEF2894249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359DB1D0-FFE2-43A8-8BE5-C7CEF2894249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359DB1D0-FFE2-43A8-8BE5-C7CEF2894249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359DB1D0-FFE2-43A8-8BE5-C7CEF2894249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
