@@ -1,5 +1,5 @@
-﻿using ProblemSolving.Interfaces;
-using System;
+﻿using System;
+using ProblemSolving.Interfaces;
 
 namespace ProblemSolving.Problems
 {

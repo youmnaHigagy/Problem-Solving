@@ -1,7 +1,7 @@
-﻿using ProblemSolving.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ProblemSolving.Interfaces;
 
 namespace ProblemSolving.Problems
 {

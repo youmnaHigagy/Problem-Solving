@@ -1,9 +1,8 @@
-﻿using ProblemSolving.Repositories;
+﻿using System;
+using System.Linq;
 using ProblemSolving.Entities;
 using ProblemSolving.Interfaces;
-using ProblemSolving.Problems;
-using System;
-using System.Linq;
+using ProblemSolving.Repositories;
 
 namespace ProblemSolving
 {
