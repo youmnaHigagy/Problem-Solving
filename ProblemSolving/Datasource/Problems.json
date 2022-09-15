@@ -18,5 +18,11 @@
     "Id": 4,
     "Title": "Divisible Sum Pairs",
     "Alias": "DivisibleSumPairs"
+  },
+  {
+    "Id": 5,
+    "Title": "Bill Division",
+    "Alias": "BillDivision"
+
   }
 ]
